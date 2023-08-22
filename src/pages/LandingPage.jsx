@@ -3,6 +3,10 @@ import { styled } from 'styled-components';
 import Navbar from '../components/Navbar';
 import mobileImg from '../assets/mobile.png';
 import Hero from '../components/Hero';
+import Feature from '../components/Feature';
+import HowItWorks from '../components/HowItWorks';
+import Service from '../components/Service';
+import Footer from '../components/Footer';
 
 export default function LandingPage() {
   return (
@@ -11,6 +15,10 @@ export default function LandingPage() {
         <Navbar />
         <Hero />
       </div>
+      <Feature />
+      <HowItWorks />
+      <Service />
+      <Footer />
     </Div>
   );
 }
@@ -25,6 +33,6 @@ background-size: cover;
 background-position: center;
 display: flex;
 flex-direction: column;
-border-bottom-left-radius: 100px;
+border-bottom-left-radius: 80px;
 }
 `;

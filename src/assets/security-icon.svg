@@ -1,0 +1,24 @@
+<svg width="35" height="39" viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 55500">
+<g id="Mask group">
+<mask id="mask0_1_315" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="39">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M2.40582 6.9122L17.5075 2.5047L32.5942 6.9122V15.9503C32.5941 20.5822 31.1365 25.0967 28.4279 28.8542C25.7192 32.6117 21.897 35.4216 17.5025 36.8859C13.1067 35.4218 9.28314 32.6115 6.57358 28.8532C3.86401 25.0949 2.40589 20.5792 2.40582 15.9461V6.9122Z" fill="white" stroke="white" stroke-width="3.35426" stroke-linejoin="round"/>
+<path id="Vector_2" d="M9.95294 18.4373L15.8229 24.3073L25.8857 14.2445" stroke="black" stroke-width="3.35426" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_1_315)">
+<path id="Vector_3" d="M-2.62671 -0.849609H37.6244V39.4015H-2.62671V-0.849609Z" fill="url(#paint0_linear_1_315)"/>
+</g>
+</g>
+<path id="Vector_4" d="M9.95117 18.4371L15.8211 24.307L25.8839 14.2443" stroke="white" stroke-width="3.35426" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_315" x1="17.4989" y1="-0.849609" x2="17.4989" y2="39.4015" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-color="#54C6AA" stop-opacity="0.7"/>
+</linearGradient>
+</defs>
+</svg>
