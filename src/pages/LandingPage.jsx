@@ -2,6 +2,7 @@ import React from 'react';
 import { styled } from 'styled-components';
 import Navbar from '../components/Navbar';
 import mobileImg from '../assets/mobile.png';
+import desktopImg from '../assets/desktop-bg.png';
 import Hero from '../components/Hero';
 import Feature from '../components/Feature';
 import HowItWorks from '../components/HowItWorks';
@@ -10,7 +11,7 @@ import Footer from '../components/Footer';
 
 export default function LandingPage() {
   return (
-    <Div mobileImg={mobileImg}>
+    <Div mobileImg={mobileImg} desktopImg={desktopImg}>
       <div className="bg">
         <Navbar />
         <Hero />
@@ -34,5 +35,12 @@ background-position: center;
 display: flex;
 flex-direction: column;
 border-bottom-left-radius: 80px;
+}
+
+@media (min-width: 768px){
+  .bg{
+  background-image: url(${desktopImg});
+  border-bottom-left-radius: 0px;
+  }
 }
 `;

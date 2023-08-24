@@ -44,7 +44,6 @@ export default function Footer() {
             <li>About us</li>
             <li>Testimonials</li>
             <li>Terms of Service</li>
-            <li>Privacy and policy</li>
           </ul>
         </div>
       </div>
@@ -110,5 +109,15 @@ align-items: center;
     .icon{
         color: white;
     }
+}
+
+@media (min-width: 768px){
+  .footer-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+  }
+   
 }
 `;

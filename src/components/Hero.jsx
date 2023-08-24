@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import img from '../assets/mobile-mock.png';
 
 export default function Hero() {
   return (
@@ -7,10 +8,16 @@ export default function Hero() {
 
       <div className="hero">
         <div className="hero-content">
-          <h1 className="headline">The new way of money transfer Tolopay</h1>
+          <h1 className="headline">
+            The New and Smarter way of Money Transfer
+            <span className="span-text"> Tolopay!!</span>
+          </h1>
           <p className="tagline"> Pay anything anywhere easly</p>
           <button type="button" className="btn-signup">Create new Account</button>
         </div>
+      </div>
+      <div className="img-container">
+        <img src={img} alt="img" />
       </div>
     </Section>
   );
@@ -42,6 +49,10 @@ flex-direction: column;
         line-height: 52px;
       }
 
+      /* .span-text{
+        display: none;
+      } */
+
       .tagline{
        font-size: 16px;
        font-weight: 400;
@@ -61,5 +72,50 @@ flex-direction: column;
         color: #fff;
       }
     }
+
 }
+
+.img-container{
+display: none;
+}
+
+@media (min-width: 768px){
+  padding: 0 4.5rem;
+  flex-direction: row;
+  .hero-content .headline {
+  font-size: 48px !important;
+  /* width: 100%; */
+  .span-text {
+    background: linear-gradient(118deg, #3A87BE 35.52%, rgba(84, 198, 170, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     font-size: 48px !important;
+     font-weight: 700;
+     line-height: 52px;
+  }
+}
+.tagline{
+  font-size: 20px !important;
+  font-weight: 400;
+  line-height: 28px;
+}
+  
+   .hero{
+    margin-top: 33px;
+    width: 60%;
+   }
+   .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37%;
+    margin-top: 30px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+   }
+}  
+
 `;

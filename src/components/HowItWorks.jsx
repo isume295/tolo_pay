@@ -1,11 +1,15 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import img from '../assets/signup.png';
 
 export default function HowItWorks() {
   return (
-    <Section>
+    <Section img={img}>
       <h2 className="title">How it works</h2>
       <div className="steps-container">
+        <div className="img-container">
+          <img src={img} alt="img" />
+        </div>
         <div className="steps">
           <div className="steps-content">
             <div className="step">1</div>
@@ -16,7 +20,7 @@ export default function HowItWorks() {
 
             </div>
           </div>
-          {/* <div className="line" /> */}
+          <div className="line" />
           <div className="steps-content">
             <div className="step color">2</div>
             <div className="details">
@@ -26,7 +30,7 @@ export default function HowItWorks() {
 
             </div>
           </div>
-          {/* <div className="line line-2" /> */}
+          <div className="line line-2" />
           <div className="steps-content">
             <div className="step color">3</div>
             <div className="details">
@@ -58,6 +62,7 @@ color: #172B4D;
 .steps-container{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .steps{
@@ -113,14 +118,30 @@ line-height: 145.5%;
   width: 1px;
   height: 80px;  
   background-color: #3A87BE40;
-  position: absolute;  
-  /* margin-left: 113px; */
-  /* margin-left: 67px; */
+ 
+  margin-left: 113px;  
+   /* margin-left: 67px;  */
   margin-top: 65px;
+  /* left: 70; */
+  /* top: 60 !important; */
+ 
 } 
 .line-2{
     margin-top: 190px;  
  
 }
-
+.img-container {
+  display: none;
+}
+@media (min-width: 768px){
+  .img-container{
+    display: flex;
+    width: 30%;
+    margin-left: 7rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 `;

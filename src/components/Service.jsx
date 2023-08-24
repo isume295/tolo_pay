@@ -1,9 +1,10 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import img from '../assets/service-bg.png';
 
 export default function Service() {
   return (
-    <Section>
+    <Section img={img}>
       <div className="service-container">
         <h3 className="title">Best Payment Service For Your Transactions</h3>
         <p className="details">Make it easier for you to make any transaction through your mobile phone with ToloPay service</p>
@@ -51,5 +52,23 @@ line-height: 24px;
 color: #E2F3FF;
 }
 
+}
+
+@media (min-width: 768px){
+background-image: url(${img});
+background-size: cover;
+background-position: center;
+background-color: transparent;
+.service-container{
+  padding-left: 5rem;
+}
+.title{
+  width: 50%;
+  font-size: 40px !important;
+  font-weight: 500 !important;
+}
+.details{
+  width: 50%;
+}
 }
 `;

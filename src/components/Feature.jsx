@@ -45,6 +45,13 @@ export default function Feature() {
           <span className="feature">Keeping secrecy</span>
         </div>
 
+        <div className="cards">
+          <div className="icon-container">
+            <img src={dollar} alt="icon" />
+          </div>
+          <span className="feature">Keeping secrecy</span>
+        </div>
+
       </div>
     </Section>
   );
@@ -76,17 +83,25 @@ height: 199px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 17.61px;
+gap: 16.61px;
 align-items: center;
 border: 2px solid;
 border-image: linear-gradient(to right, #3A87BE, #54C6AA) 1;
-
+color: rgba(23, 43, 77,0.9);
 .feature{
 text-align: center;
-font-size: 19.057px;
+font-size: 16.057px;
 font-weight: 500;
-line-height: 28.586px;
+line-height: 20.586px;
 width: 50%;
 }
+}
+
+@media (min-width: 768px){
+  .feature-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
 }
 `;

@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { styled } from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -14,6 +13,12 @@ function Navbar() {
         <span className="logo-name">ToloPay</span>
       </div>
       <div className="menu-icon"><MenuIcon /></div>
+      <ul className="links">
+        <li><a href="r">home</a></li>
+        <li><a href="r">Features</a></li>
+        <li><a href="r">how it works</a></li>
+        <li><button type="button">Login</button></li>
+      </ul>
     </Nav>
   );
 }
@@ -28,6 +33,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
+.links{
+  display: none;
+}
 .logo{
   display: flex;
   justify-content: center;
@@ -44,5 +52,40 @@ align-items: center;
 }
 .menu-icon{
   color: #ffffff;
+}
+
+@media (min-width: 768px){
+  padding: 5px 4.5rem;
+  height: 72px;
+  .menu-icon{
+    display: none;
+  }
+  .links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    button{
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      color: white;
+      border: none;
+      padding: 6px 20px;
+      border-radius: 4px;
+      background-color: #3A87BE;;
+
+    }
+
+    a{
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      color: white
+    }
+  }
 }
 `;
